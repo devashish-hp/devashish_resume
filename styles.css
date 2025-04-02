@@ -15,16 +15,20 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 nav ul li {
-    display: inline;
-    margin-right: 15px;
+    margin: 0 15px;
 }
-section {
+.hero {
+    text-align: center;
+    padding: 50px;
+}
+.projects, .resume-content, .contact-info {
+    max-width: 800px;
+    margin: auto;
     padding: 20px;
-    margin: 20px;
-    background: white;
-    border-radius: 8px;
 }
 footer {
     text-align: center;
