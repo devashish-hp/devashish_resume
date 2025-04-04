@@ -1,4 +1,3 @@
-<!-- index.html (Home Page) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,23 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devashish Shukla</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- For social icons -->
     <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Devashish Shukla</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="hero-header">
+        <div class="hero-content">
+            <h1>Devashish Shukla</h1>
+            <p class="typewriter">Software Developer | Cryptography | Azure DevOps</p>
+            <button id="dark-mode-toggle">Toggle Dark Mode</button>
+        </div>
     </header>
-    <section class="hero">
-        <h2>Software Developer | Cryptography | Azure DevOps</h2>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="intro">
         <p>Building secure and efficient software solutions.</p>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/devashish" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/devashish" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:devashish.hp@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
     </section>
     <footer>
         <p>&copy; 2024 Devashish Shukla</p>
