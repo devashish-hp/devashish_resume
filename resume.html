@@ -5,32 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Devashish Shukla</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Resume</h1>
-        <nav>
-		    <ul>
-		        <li><a href="/devashish_resume/">Home</a></li>
-		        <li><a href="/devashish_resume/resume.html">Resume</a></li>
-		        <li><a href="/devashish_resume/portfolio.html">Portfolio</a></li>
-		        <li><a href="/devashish_resume/contact.html">Contact</a></li>
-		    </ul>
-		</nav>
-    </header>
-    <section class="resume-content">
-        <h2>Experience</h2>
-        <div class="job">
-            <p><strong>Assistant Software Developer</strong> - DZ Card India Pvt Ltd</p>
-            <p>Aug 2022 - Present</p>
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="devashish.jpg" alt="Devashish Shukla" class="nav-img">
+            <span>Devashish Shukla</span>
         </div>
-        <div class="job">
-            <p><strong>Software Developer</strong> - Vijay Sales India Pvt Ltd</p>
-            <p>Sep 2017 - Nov 2020</p>
+        <div class="nav-right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="dark-mode-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
-    </section>
-    <footer>
-        <p>&copy; 2024 Devashish Shukla</p>
+    </nav>
+
+    <main class="resume-container fade-in">
+        <header class="resume-header">
+
+            <a href="resume.pdf" download class="cta-button">Download Resume</a>
+        </header>
+
+        <section class="resume-section education">
+            <h2>Education</h2>
+            <div class="card">
+                <h3>MCA - Dr. APJ Abdul Kalam Technical University</h3>
+                <p>Sore: 80%</p>
+            </div>
+            <div class="card">
+                <h3>BCA - Mahatma Gandhi Kashi Vidyapith</h3>
+                <p>Score: 58.76%</p>
+            </div>
+        </section>
+
+        <section class="resume-section technical">
+            <h2>Technical Proficiency</h2>
+            <div class="card">
+                <ul>
+                    <li>Windows Application/Services with VB/C#</li>
+                    <li>Azure DevOps</li>
+                    <li>Automation Software</li>
+                    <li>Cryptography</li>
+                    <li>Audit EMV/Rupay Compliance</li>
+                    <li>Card Testing/Personalization</li>
+                    <li>Sales/Marketing</li>
+                    <li>Team Handling</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="resume-section skills">
+            <h2>Skills</h2>
+            <div class="skill-card">
+                <span>Project Management</span>
+                <div class="progress"><div class="progress-bar" style="width: 40%"></div></div>
+            </div>
+            <div class="skill-card">
+                <span>Software Development</span>
+                <div class="progress"><div class="progress-bar" style="width: 35%"></div></div>
+            </div>
+            <div class="skill-card">
+                <span>Web Development</span>
+                <div class="progress"><div class="progress-bar" style="width: 40%"></div></div>
+            </div>
+            <div class="skill-card">
+                <span>Staff and User Training</span>
+                <div class="progress"><div class="progress-bar" style="width: 75%"></div></div>
+            </div>
+            <div class="skill-card">
+                <span>Process Improvement</span>
+                <div class="progress"><div class="progress-bar" style="width: 80%"></div></div>
+            </div>
+        </section>
+
+        <section class="resume-section personal">
+            <h2>Personal Skills</h2>
+            <div class="card">
+                <ul>
+                    <li>Hardworking, with spirit of completing any task with full commitment</li>
+                    <li>Willingness to learn, Fast Learner</li>
+                    <li>Good logic & problem-solving abilities</li>
+                    <li>Team Facilitator (Capable of working in a group and even Leading it)</li>
+                    <li>Positive Attitude, calm and balanced, Young, energetic</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="resume-section professional">
+            <h2>Professional Skills</h2>
+            <div class="card">
+                <ul>
+                    <li>AI Basics with automation (Statistical data analysis and LLM)</li>
+                    <li>Software Development (Front-End, Back-End, Deployment, Maintenance, Testing)</li>
+                    <li>Microsoft Azure (Developer, Scrum, CI/CD, Admin, Cloud)</li>
+                    <li>MasterCard/VISA/AMEX/Rupay (Key Management/Cryptography/Card Programs)</li>
+                    <li>Security Compliance & Audits</li>
+                    <li>IT Products Sales & Marketing</li>
+                    <li>Technical Training & Process Improvement</li>
+                    <li>Escalation/Risk Management</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="copyright">© 2024 Devashish Shukla | <a href="#">Privacy Policy</a></p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/devashish-shukla-ai/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://x.com/devashish_hp" target="_blank" aria-label="Twitter Profile"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="mailto:devashish.hp@gmail.com" aria-label="Email Me"><i class="fas fa-envelope fa-2x"></i></a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

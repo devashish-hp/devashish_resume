@@ -3,37 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devashish Shukla</title>
+    <title>Devashish Shukla - Web Resume</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- For social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <script defer src="script.js"></script>
 </head>
 <body>
-    <header class="hero-header">
-        <div class="hero-content">
-            <h1>Devashish Shukla</h1>
-            <p class="typewriter">Software Developer | Cryptography | Azure DevOps</p>
-            <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="devashish.jpg" alt="Devashish Shukla" class="nav-img">
+            <span>Devashish Shukla</span>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="dark-mode-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content fade-in">
+            <img src="devashish.jpg" alt="Devashish Shukla" class="profile-img">
+            <h1>Hi, I’m Devashish Shukla</h1>
+            <p class="typewriter">Software Developer | Fintech Innovator | Cloud Enthusiast</p>
+            <a href="work.html" class="cta-button">See My Work</a>
         </div>
     </header>
-    <nav>
-	    <ul>
-	        <li><a href="/devashish_resume/">Home</a></li>
-	        <li><a href="/devashish_resume/resume.html">Resume</a></li>
-	        <li><a href="/devashish_resume/portfolio.html">Portfolio</a></li>
-	        <li><a href="/devashish_resume/contact.html">Contact</a></li>
-	    </ul>
-</nav>
-    <section class="intro">
-        <p>Building secure and efficient software solutions.</p>
-        <div class="social-links">
-            <a href="https://linkedin.com/in/devashish" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/devashish" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="mailto:[email protected]"><i class="fas fa-envelope"></i></a>
-        </div>
+
+    <section class="intro fade-in">
+        <h2>About Me</h2>
+        <p>Dedicated Software Developer with a passion for designing secure, scalable solutions in fintech, cloud computing, and automation.</p>
     </section>
-    <footer>
-        <p>&copy; 2024 Devashish Shukla</p>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="copyright">© 2024 Devashish Shukla | <a href="#">Privacy Policy</a></p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/devashish-shukla-ai/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://x.com/devashish_hp" target="_blank" aria-label="Twitter Profile"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="mailto:devashish.hp@gmail.com" aria-label="Email Me"><i class="fas fa-envelope fa-2x"></i></a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
