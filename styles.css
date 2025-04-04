@@ -92,13 +92,17 @@ html.dark .navbar {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('1674579079089.jpg') no-repeat center/cover;
+    background: #4A4A4A; /* Removed background image, replaced with solid color */
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
+}
+
+html.dark .hero {
+    background: #121212; /* Adjusted for dark mode */
 }
 
 .hero-content {
